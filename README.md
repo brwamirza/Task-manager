@@ -6,12 +6,12 @@
 * Firebase authentication, users can sign up using google account or email address.
 * viewpager 2.
 * Firebase realtime database to store users data.
-Offline cache.
-Data Binding.
-RecyclerView.
-Android jetpack library.
-Navigation component with nav drawer
-Shared element transition.
+* Offline cache.
+* Data Binding.
+* RecyclerView.
+* Android jetpack library.
+* Navigation component with nav drawer
+* Shared element transition.
 
 ## Screenshots
 ![signin activity](screenshots/signin-activity.png)
