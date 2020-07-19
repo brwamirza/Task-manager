@@ -8,6 +8,7 @@
 * Offline cache.
 * Data Binding.
 * RecyclerView.
+* Android jetpack library.
 
 ## Screenshots
 ![signin activity](screenshots/signin-activity.png)
