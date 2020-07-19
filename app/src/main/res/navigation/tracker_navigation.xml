@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@id/nav_setting"
-        android:name="com.example.android.taskManager.navDrawerFragments.SettingFragment"
+        android:name="com.example.android.todo.navDrawerFragments.SettingFragment"
         android:label="Settings">
         <action
             android:id="@+id/action_nav_setting_to_verifyChangePassword"
@@ -19,15 +19,15 @@
     </fragment>
     <fragment
         android:id="@id/nav_home"
-        android:name="com.example.android.taskManager.MainFragment"
+        android:name="com.example.android.todo.MainFragment"
         android:label="My Tasks" />
     <fragment
         android:id="@id/nav_feedback"
-        android:name="com.example.android.taskManager.navDrawerFragments.FeedbackFragment"
+        android:name="com.example.android.todo.navDrawerFragments.FeedbackFragment"
         android:label="Send feedback" />
     <fragment
         android:id="@+id/changePasswordFragment"
-        android:name="com.example.android.taskManager.navDrawerFragments.ChangePasswordFragment"
+        android:name="com.example.android.todo.navDrawerFragments.ChangePasswordFragment"
         android:label="Change password" >
         <action
             android:id="@+id/action_changePasswordFragment_to_nav_setting"
@@ -35,7 +35,7 @@
     </fragment>
     <fragment
         android:id="@+id/changeEmailFragment"
-        android:name="com.example.android.taskManager.navDrawerFragments.ChangeEmailFragment"
+        android:name="com.example.android.todo.navDrawerFragments.ChangeEmailFragment"
         android:label="Change email" >
         <action
             android:id="@+id/action_changeEmailFragment_to_nav_setting"
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/verifyChangeEmail"
-        android:name="com.example.android.taskManager.navDrawerFragments.VerifyChangeEmail"
+        android:name="com.example.android.todo.navDrawerFragments.VerifyChangeEmail"
         android:label="Verify password">
         <action
             android:id="@+id/action_verifyChangeEmail_to_changeEmailFragment"
@@ -54,7 +54,7 @@
     </fragment>
     <fragment
         android:id="@+id/verifyChangePassword"
-        android:name="com.example.android.taskManager.navDrawerFragments.VerifyChangePassword"
+        android:name="com.example.android.todo.navDrawerFragments.VerifyChangePassword"
         android:label="Verify password">
         <action
             android:id="@+id/action_verifyChangePassword_to_changePasswordFragment"

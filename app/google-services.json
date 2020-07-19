@@ -4,21 +4,21 @@
     "firebase_url": "https://bug-tracker-782b4.firebaseio.com",
     "project_id": "bug-tracker-782b4",
     "storage_bucket": "bug-tracker-782b4.appspot.com"
-},
+  },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:262759389104:android:007a05db35316e4e33a875",
+        "mobilesdk_app_id": "1:262759389104:android:2b24cdbee7d2bcba33a875",
         "android_client_info": {
-          "package_name": "com.example.android.bug_tracker"
+          "package_name": "com.example.android.taskManager"
         }
       },
       "oauth_client": [
         {
-          "client_id": "262759389104-r23k089bapg6r2g0fdeodt4787d75prd.apps.googleusercontent.com",
+          "client_id": "262759389104-uout1754oi7t0ulhvl1sa4ss062ot250.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.android.bug_tracker",
+            "package_name": "com.example.android.taskManager",
             "certificate_hash": "ecbbff81b1c0ca2d4bbf469a8e690188d30de083"
           }
         },
@@ -45,17 +45,17 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:262759389104:android:2b24cdbee7d2bcba33a875",
+        "mobilesdk_app_id": "1:262759389104:android:05492054709267e033a875",
         "android_client_info": {
-          "package_name": "com.example.android.taskManager"
+          "package_name": "com.example.android.todo"
         }
       },
       "oauth_client": [
         {
-          "client_id": "262759389104-uout1754oi7t0ulhvl1sa4ss062ot250.apps.googleusercontent.com",
+          "client_id": "262759389104-t4om02rev9vria3hfpas9mb686ou6q28.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.android.taskManager",
+            "package_name": "com.example.android.todo",
             "certificate_hash": "ecbbff81b1c0ca2d4bbf469a8e690188d30de083"
           }
         },
