@@ -36,6 +36,7 @@ class DetailActivity : AppCompatActivity() {
         closeImage.setOnClickListener {
             supportFinishAfterTransition()
             closeImage.isVisible = false
+            finish()
         }
 
         update_button.setOnClickListener {
@@ -52,6 +53,7 @@ class DetailActivity : AppCompatActivity() {
         ref.child(taskId!!.toString()).removeValue()
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
+        finish()
     }
 
     private fun updateItem() {
