@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.taskManager"
+    >
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:fullBackupContent="true"
+        android:name="com.example.android.taskManager.taskManager">
+        <activity
+            android:name="com.example.android.taskManager.SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.android.taskManager.SignUpActivity" />
+        <activity android:name="com.example.android.taskManager.MainActivity"
+            android:theme="@style/AppTheme.ActivityTracker"/>
+        <activity android:name="com.example.android.taskManager.CreateActivity" />
+        <activity android:name="com.example.android.taskManager.DetailActivity"
+            android:theme="@style/AppTheme.Transparent.ActivityDetail"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
