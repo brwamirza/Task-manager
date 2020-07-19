@@ -19,8 +19,8 @@
     </fragment>
     <fragment
         android:id="@id/nav_home"
-        android:name="com.example.android.taskManager.TrackerFragment"
-        android:label="Home" />
+        android:name="com.example.android.taskManager.MainFragment"
+        android:label="My Tasks" />
     <fragment
         android:id="@id/nav_feedback"
         android:name="com.example.android.taskManager.navDrawerFragments.FeedbackFragment"

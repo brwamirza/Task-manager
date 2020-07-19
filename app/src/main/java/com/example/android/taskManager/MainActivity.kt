@@ -15,7 +15,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import kotlinx.android.synthetic.main.activity_tracker.*
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.nav_header_main.view.*
 
 class MainActivity : AppCompatActivity() {
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         FirebaseDatabase.getInstance().reference.child("users").child(id).addListenerForSingleValueEvent(postListener)
-        setContentView(R.layout.activity_tracker)
+        setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
         drawer = findViewById(R.id.drawer)
         mHeaderView = nav_view.getHeaderView(0)

@@ -7,19 +7,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import com.example.android.taskManager.databinding.FragmentTrackerBinding
+import com.example.android.taskManager.databinding.FragmentMainBinding
 import com.example.android.taskManager.viewPagerAdapter.init
-import kotlinx.android.synthetic.main.fragment_tracker.*
+import kotlinx.android.synthetic.main.fragment_main.*
 
-private lateinit var binding: FragmentTrackerBinding
+private lateinit var binding: FragmentMainBinding
 
-class TrackerFragment : Fragment() {
+class MainFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = DataBindingUtil.inflate(
             inflater,
-            R.layout.fragment_tracker, container, false
+            R.layout.fragment_main, container, false
         )
         return binding.root
     }

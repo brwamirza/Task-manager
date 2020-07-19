@@ -35,8 +35,8 @@ class DetailActivity : AppCompatActivity() {
 
         closeImage.setOnClickListener {
             supportFinishAfterTransition()
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
             closeImage.isVisible = false
-            finish()
         }
 
         update_button.setOnClickListener {
@@ -52,8 +52,8 @@ class DetailActivity : AppCompatActivity() {
         val taskId = intent.getStringExtra("id")
         ref.child(taskId!!.toString()).removeValue()
         val intent = Intent(this, MainActivity::class.java)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
         startActivity(intent)
-        finish()
     }
 
     private fun updateItem() {
@@ -73,8 +73,8 @@ class DetailActivity : AppCompatActivity() {
             val post = Post(id = taskId,message = task,taskStatus = status)
             ref.child(taskId!!.toString()).setValue(post)
             val intent = Intent(this, MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
-            finish()
         }
 
     }
