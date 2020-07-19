@@ -9,6 +9,7 @@
 * Data Binding.
 * RecyclerView.
 * Android jetpack library.
+* Navigation component with nav drawer
 * Shared element transition.
 
 ## Screenshots
