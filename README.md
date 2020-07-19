@@ -9,6 +9,7 @@
 * Data Binding.
 * RecyclerView.
 * Android jetpack library.
+* Shared element transition.
 
 ## Screenshots
 ![signin activity](screenshots/signin-activity.png)
