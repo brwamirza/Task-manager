@@ -41,6 +41,7 @@ class SettingFragment : Fragment() {
             FirebaseAuth.getInstance().signOut()
             val intent = Intent(context, SignInActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
 
         }

@@ -19,6 +19,7 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail)
          id = FirebaseAuth.getInstance().currentUser?.uid.toString()
         ref = FirebaseDatabase.getInstance().reference.child("users").child(id).child("tasks")
+
         filled_exposed_dropdown.apply {
             setAdapter(
                 ArrayAdapter(
@@ -30,12 +31,12 @@ class DetailActivity : AppCompatActivity() {
         //getting data from intent
         val message = intent.getStringExtra("message")
         val taskStatus = intent.getStringExtra("taskStatus")
+
         yourTaskInput.setText(message)
         filled_exposed_dropdown.setText(taskStatus)
 
         closeImage.setOnClickListener {
             supportFinishAfterTransition()
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
             closeImage.isVisible = false
         }
 
@@ -51,9 +52,8 @@ class DetailActivity : AppCompatActivity() {
     private fun deleteItem() {
         val taskId = intent.getStringExtra("id")
         ref.child(taskId!!.toString()).removeValue()
-        val intent = Intent(this, MainActivity::class.java)
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
-        startActivity(intent)
+        finish()
+        overridePendingTransition(0,0)
     }
 
     private fun updateItem() {
@@ -72,9 +72,8 @@ class DetailActivity : AppCompatActivity() {
         else{
             val post = Post(id = taskId,message = task,taskStatus = status)
             ref.child(taskId!!.toString()).setValue(post)
-            val intent = Intent(this, MainActivity::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
-            startActivity(intent)
+            supportFinishAfterTransition()
+            closeImage.isVisible = false
         }
 
     }
