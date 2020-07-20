@@ -8,17 +8,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:262759389104:android:2b24cdbee7d2bcba33a875",
+        "mobilesdk_app_id": "1:262759389104:android:15afb881ca1ffa1c33a875",
         "android_client_info": {
-          "package_name": "com.example.android.taskManager"
+          "package_name": "com.brwakawa.android.todo"
         }
       },
       "oauth_client": [
         {
-          "client_id": "262759389104-uout1754oi7t0ulhvl1sa4ss062ot250.apps.googleusercontent.com",
+          "client_id": "262759389104-68s7hbku82mu5hih0r5rflterd917e95.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.android.taskManager",
+            "package_name": "com.brwakawa.android.todo",
             "certificate_hash": "ecbbff81b1c0ca2d4bbf469a8e690188d30de083"
           }
         },
