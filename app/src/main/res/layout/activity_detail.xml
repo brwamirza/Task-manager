@@ -34,7 +34,7 @@
         android:id="@+id/EditTaskText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="68dp"
         android:text="@string/edit_task"
         android:textColor="#000000"
@@ -47,20 +47,19 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:transitionGroup="true"
         app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
-        android:transitionGroup="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EditTaskText">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/yourTaskInput"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+            android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -68,7 +67,7 @@
         android:id="@+id/taskStatusTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:text="@string/task_status"
         android:textColor="#000000"
@@ -81,9 +80,9 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="32dp"
         app:endIconMode="dropdown_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,10 +102,10 @@
 
     <Button
         android:id="@+id/delete_button"
-        android:layout_width="120dp"
+        android:layout_width="150dp"
         android:layout_height="65dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/delete"
         android:textColor="#FFFFFF"
         app:backgroundTint="#EA0F0F"
@@ -115,9 +114,9 @@
 
     <Button
         android:id="@+id/update_button"
-        android:layout_width="120dp"
+        android:layout_width="150dp"
         android:layout_height="65dp"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:text="@string/update"
         android:textColor="#FFFFFF"
