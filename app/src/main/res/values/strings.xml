@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Todo</string>
-    <string name="text_welcome2">Please login or sign up to continue using our app.</string>
     <string name="roboto_medium">roboto_medium</string>
     <string name="custom_art">custom art</string>
     <string name="bug_tracker">Bug Tracker</string>
