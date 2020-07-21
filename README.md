@@ -3,7 +3,7 @@
 ## This app uses or contain the following:
 * This app uses MVVM architecture.
 * Material design components.
-* Firebase authentication, users can sign up using google account or email address.
+* Firebase authentication, users can sign up using email address.
 * viewpager 2.
 * Firebase realtime database to store users data.
 * Offline cache.
